@@ -7,10 +7,9 @@ import (
 	"strings"
 	"time"
 
+	"github.com/DiegoSantosWS/gocrawler/types"
 	"github.com/PuerkitoBio/goquery"
 )
-
-
 
 func StartWSITEBRASIL() {
 	url := []string{
@@ -42,7 +41,7 @@ func processURL(u string) {
 	if err != nil {
 		log.Println(fmt.Sprintf("[news wsitebrasil] error from http. url [%s] err [%v]", u, err))
 	}
-	data := data{}
+	data := types.Data{}
 	doc.Find(".box-news").Each(func(i int, g *goquery.Selection) {
 		link, e := g.Find("a").First().Attr("href")
 		if !e {
@@ -69,6 +68,6 @@ func processURL(u string) {
 	})
 }
 
-func saveData(d data) {
+func saveData(d types.Data) {
 	log.Println(fmt.Sprintf("data [%v]", d))
 }

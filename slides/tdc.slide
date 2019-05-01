@@ -1,0 +1,30 @@
+Iniciando em GO!
+Um simples crawler usando go
+
+DIEGO SANTOS
+Back-end at Fliper
+diegosantosws1@gmail.com
+@diegosantosws
+
+* OLÁ PESSOAS
+
+Todas as vezes que vemos uma palestra com titulo *Iniciando* já pensamos "Nossa mais um hello world!!".
+
+.image images/triste.gif
+
+* Mudando o contexto...
+
+Então vamos fazer algo diferente!! *Ai* *sim* *em* *miseravi*
+
+.image images/feliz.gif
+
+
+Hoje ao invés de um simples *hello* *world* com uma longa e vasta explicação, vamos mostrar um crawler.
+
+* 
+
+.play example/helloworld.go
+
+.image images/indignado.gif
+
+* O QUE É UM CRAWLER?

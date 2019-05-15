@@ -56,10 +56,6 @@ Estrutura de diretorios e arquivos fica conforme a ilustração abaixo
 
 * CODE NEWS
 
-vamos ver como tudo é processado0
+vamos ver como tudo é processado
 
-```
-
-gcwl $ code . main.go
-
-```
+.code example/texto.md

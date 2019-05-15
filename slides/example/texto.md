@@ -1,0 +1,2 @@
+
+gcwl $ code . main.go

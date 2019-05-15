@@ -59,8 +59,7 @@ Estrutura de diretorios e arquivos fica conforme a ilustração abaixo
 vamos ver como tudo é processado0
 
 ```
+
 gcwl $ code . main.go
 
 ```
-
-.code ../news/wsitebrasil.go

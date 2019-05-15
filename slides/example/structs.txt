@@ -1,0 +1,12 @@
+gocrawler
+|  |___news
+|  |       ---> blog1.go
+|  |       ---> blog2.go
+|  |       ---> blog3.go
+|  |___worcker
+|  |       ---> scheduler.go
+|  |___types
+|  |       ---> structb1.go
+|  |       ---> structb2.go
+|  |       ---> structb3.go   
+|___main.go 

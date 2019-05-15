@@ -19,7 +19,7 @@ Então vamos fazer algo diferente!! *Ai* *sim* *em* *miseravi*
 .image images/feliz.gif
 
 
-Hoje ao invés de um simples *hello* *world* com uma longa e vasta explicação, vamos mostrar um crawler.
+Hoje ao invés de um simples *hello* *world* com uma longa e vasta explicação, vamos criar um web crawler bem simples.
 
 * 
 
@@ -27,4 +27,40 @@ Hoje ao invés de um simples *hello* *world* com uma longa e vasta explicação,
 
 .image images/indignado.gif
 
-* O QUE É UM CRAWLER?
+* O QUE É UM WEB CRAWLER?
+
+Crawler é um programa de computador criado para fazer varredura na internet de forma sistematica, através de informações relevantes a sua função.
+
+* 
+
+Neste exemplo o crawler coleta a URL de posts feitos em um blog e exibe no terminal.
+
+Estrutura de diretorios e arquivos fica conforme a ilustração abaixo
+
+.code example/structs.txt
+
+* CODE MAIN
+
+.code ../main.go
+
+* CODE WORCKER
+
+.code ../worcker/scheduler.go
+
+
+* CODE TYPES
+
+.code ../types/types.go
+
+
+
+* CODE NEWS
+
+vamos ver como tudo é processado0
+
+```
+gcwl $ code . main.go
+
+```
+
+.code ../news/wsitebrasil.go

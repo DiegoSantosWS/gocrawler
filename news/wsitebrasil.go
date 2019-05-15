@@ -11,7 +11,8 @@ import (
 	"github.com/PuerkitoBio/goquery"
 )
 
-func StartWSITEBRASIL() {
+// Execute ...
+func Execute() {
 	url := []string{
 		"https://www.wsitebrasil.com.br/blog/categoria/comercio-eletronico",
 		"https://www.wsitebrasil.com.br/blog/categoria/empreendedorismo",
@@ -61,7 +62,7 @@ func processURL(u string) {
 
 		data.Title = g.Find("h3").Text()
 		data.Description = strings.TrimSpace(g.Find("article").Text())
-		log.Println(fmt.Sprintf("data [%s]\n", strings.TrimSpace(data.Description)))
+		// log.Println(fmt.Sprintf("data [%s]\n", strings.TrimSpace(data.Description)))
 		data.Link = l
 		data.Image = img
 		saveData(data)
@@ -69,5 +70,6 @@ func processURL(u string) {
 }
 
 func saveData(d types.Data) {
-	log.Println(fmt.Sprintf("data [%v]", d))
+	log.Println("Start save")
+	log.Println(fmt.Sprintf("data [%s]", d.Link))
 }

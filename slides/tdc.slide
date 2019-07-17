@@ -25,7 +25,26 @@ Hoje ao invés de um simples *hello* *world* com uma longa e vasta explicação,
 
 .play example/helloworld.go
 
+* 
+
+Uai...
+
 .image images/indignado.gif
+
+* O INÍCIO
+
+Para algumas pessoas iniciar em uma linguagem pode ser um transtorno, póis criamos muitas manias "como em tudo que fazemos" comigo fui assim, tinha muita mania, 
+para entender melhor, eu vim do PHP porem não tinha até começar a programar em GO não tinha efetivamente programado em outra linguagem, mas já tinha brincado um pouco com PYTHON e java(nunca mais.)
+
+Assim que mudei meu cenario erá muito comun eu escrever algo como
+
+.code example/variable.text
+
+Eu já cheguei a escrever *var_dump($variavel)* para debugar um codigo.
+
+* 
+
+Mas tudo muda e com o passar do tempo começamos a escrever nossa sintaxe corretamente, como disse no inicio não vamos ver um hello world, entao vamos de fato ao que veremos?
 
 * O QUE É UM WEB CRAWLER?
 

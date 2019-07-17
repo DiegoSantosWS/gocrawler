@@ -1,0 +1,10 @@
+
+<?php -> na abertura de um arquivo golang
+
+ou declarar variavel assim:
+
+$variavel = "TDC BH"
+
+ao invés de
+
+variavel := "TDC BH" ou usar o palavra reservada VAR

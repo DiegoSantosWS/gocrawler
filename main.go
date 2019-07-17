@@ -1,10 +1,13 @@
 package main
 
 import (
-	"github.com/DiegoSantosWS/gocrawler/worcker"
+	"github.com/DiegoSantosWS/gocrawler/news"
+	"github.com/DiegoSantosWS/gocrawler/router"
 )
 
 func main() {
-	//Start the scheduler and execute the function to colect
-	worcker.Start()
+	go func() {
+		router.Server()
+	}()
+	news.Start()
 }

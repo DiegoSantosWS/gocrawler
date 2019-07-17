@@ -13,7 +13,7 @@ func Start() {
 	news.StartWSITEBRASIL()
 
 	log.Println("start scheduler")
-	
+
 	//Criar um crontab que é executado a cada minuto
 	gocron.Every(1).Minute().Do(news.StartWSITEBRASIL)
 	<-gocron.Start()

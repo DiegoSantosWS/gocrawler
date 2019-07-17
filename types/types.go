@@ -1,9 +1,10 @@
 package types
 
 type Data struct {
-	Link        string `json:"link" bson:"link"`
-	Image       string `json:"image" bson:"image"`
-	Title       string `json:"title" bson:"title"`
-	Date        string `json:"date" bson:"date"`
-	Description string `json:"description" bson:"description"`
+	ID          int64  `json:"id" db:"pid"`
+	Link        string `json:"link" db:"link"`
+	Image       string `json:"image" db:"image"`
+	Title       string `json:"title" db:"title"`
+	Date        string `json:"date" db:"date"`
+	Description string `json:"description" db:"description"`
 }

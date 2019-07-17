@@ -7,12 +7,25 @@ import (
 	"strings"
 	"time"
 
+	"github.com/DiegoSantosWS/gocrawler/db"
 	"github.com/DiegoSantosWS/gocrawler/types"
 	"github.com/PuerkitoBio/goquery"
+	"github.com/jasonlvhit/gocron"
 )
 
+func Start() {
+	execute()
+	scheduler()
+}
+
+func scheduler() {
+	log.Println("initialized scheduler")
+	gocron.Every(1).Minute().Do(execute)
+	<-gocron.Start()
+}
+
 // Execute ...
-func Execute() {
+func execute() {
 	url := []string{
 		"https://www.wsitebrasil.com.br/blog/categoria/comercio-eletronico",
 		"https://www.wsitebrasil.com.br/blog/categoria/empreendedorismo",
@@ -60,7 +73,8 @@ func processURL(u string) {
 			data.Date = strings.TrimSpace(d.Find(".data-title").Text())
 		})
 
-		data.Title = g.Find("h3").Text()
+		title := strings.Split(strings.TrimSpace(g.Find("h3").Text()), " \n                       ")
+		data.Title = title[1]
 		data.Description = strings.TrimSpace(g.Find("article").Text())
 		// log.Println(fmt.Sprintf("data [%s]\n", strings.TrimSpace(data.Description)))
 		data.Link = l
@@ -70,6 +84,5 @@ func processURL(u string) {
 }
 
 func saveData(d types.Data) {
-	log.Println("Start save")
-	log.Println(fmt.Sprintf("data [%s]", d.Link))
+	db.InsertNews(db.Db, d)
 }

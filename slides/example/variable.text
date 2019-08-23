@@ -3,8 +3,8 @@
 
 ou declarar variavel assim:
 
-$variavel = "TDC BH"
+$variavel = "TDC SP"
 
 ao invés de
 
-variavel := "TDC BH" ou usar o palavra reservada VAR
+variavel := "TDC SP" ou usar o palavra reservada VAR
